@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lorem ipsum Gallery</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div>
+<meta charset="UTF-8">
+<button class="w3-bar-item w3-button w3-right" onclick="toggleMenu()">&#9776;</button>
+  <a href="hamburger.html" class="w3-bar-item w3-button">Home</a>
+  <a href="menu.html" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+</div>
+
+<h1 style="text-align:center;">Lorem ipsum Gallery</h1>
+
+<body>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p></body>
+
+<h2>My Gallery</h2>
+
+<div class="w3-content w3-display-container" style="max-width:600px">
+  <img class="mySlides w3-border" src="https://picsum.photos/600/400?random=1" style="width:100%">
+  <img class="mySlides w3-border" src="https://picsum.photos/600/400?random=2" style="width:100%">
+  <img class="mySlides w3-border" src="https://picsum.photos/600/400?random=3" style="width:100%">
+  <img class="mySlides w3-border" src="https://picsum.photos/600/400?random=4" style="width:100%">
+  <img class="mySlides w3-border" src="https://picsum.photos/600/400?random=5" style="width:100%">
+  <img class="mySlides w3-border" src="https://picsum.photos/600/400?random=6" style="width:100%">
+
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<body>
+<p> ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+</body>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lorem ipsum</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-light-grey w3-border w3-large">
+  <a href=“hamburger.html class="w3-bar-item w3-button">Home</a>
+
+  <!-- Desktop Links -->
+  <a href="menu.html" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small">Gallery</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+
+  <!-- Hamburger Icon (for small screens) -->
+  <a href="javascript:void(0)" 
+     class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" 
+     onclick="toggleMenu()">☰</a>
+</div>
+
+<!-- Collapsible Menu (for mobile/tablet) -->
+<div id="mobileMenu" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-light-grey">
+  <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+  <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+<h1 style="text-align:center;">Lorem ipsum Contact</h1>
+
+<body>
+    <p>If you would like to provide feedback or to join our membership, fill out the form below. To sign up for updates, enter your email below.</p>
+
+
+<p>Enter your email address to sign up for updates.</p>
+<form action="#" method="post">
+  <input type="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">Submit</button>
+</form>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<p></p>
+
+<h2>Join our membership</h2>
+
+  <label class="w3-label w3-text-black">Name</label>
+  <input class="w3-input w3-border" type="text" name="name" placeholder="Your Name" required>
+
+  <label class="w3-label w3-text-black">Email</label>
+  <input class="w3-input w3-border" type="email" name="email" placeholder="Your Email" required>
+
+  <label class="w3-label w3-text-black">Subject</label>
+  <select class="w3-input w3-border" name="subject" required>
+    <option value="">Select a subject</option>
+    <option value="general">General Inquiry</option>
+    <option value="support">Support</option>
+    <option value="feedback">Feedback</option>
+  </select>
+
+  <label class="w3-label w3-text-black">Message</label>
+  <textarea class="w3-input w3-border" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+  <button class="w3-button w3-black w3-margin-top" type="submit">Submit</button>
+
+</body>
